@@ -1,43 +1,404 @@
-
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <title>E-Statics Plot</title>
-        
-<link rel="stylesheet" href="https://cdn.pydata.org/bokeh/release/bokeh-0.12.3.min.css" type="text/css" />
-        
-<script type="text/javascript" src="https://cdn.pydata.org/bokeh/release/bokeh-0.12.3.min.js"></script>
-<script type="text/javascript">
-    Bokeh.set_log_level("info");
-</script>
-        <style>
-          html {
-            width: 100%;
-            height: 100%;
-          }
-          body {
-            width: 90%;
-            height: 100%;
-            margin: auto;
-          }
-        </style>
-    </head>
-    <body>
-        
-        <div class="bk-root">
-            <div class="plotdiv" id="ef291ad1-36c0-4c7b-a07a-74b35e915c5e"></div>
-        </div>
-        
-        <script type="text/javascript">
-            Bokeh.$(function() {
-            Bokeh.safely(function() {
-                var docs_json = {"9adbeec8-bf1a-4cff-a904-5fd2b8840898":{"roots":{"references":[{"attributes":{"data_source":{"id":"31c2b7ec-5713-4b73-9dc2-6920135c192b","type":"ColumnDataSource"},"glyph":{"id":"ce1c9dd1-4b38-44e9-b2f7-c3f2d7bcf0b7","type":"Line"},"hover_glyph":null,"nonselection_glyph":{"id":"a9bf1862-cece-4b5a-92a1-570d461a49cb","type":"Line"},"selection_glyph":null},"id":"a34fb8d7-1d7a-423d-83f8-b609d2016738","type":"GlyphRenderer"},{"attributes":{"data_source":{"id":"a5c7075c-e3f0-4c82-9dc4-bd5ce758172a","type":"ColumnDataSource"},"glyph":{"id":"343dc25c-373e-4abd-825f-14a692bc7048","type":"Circle"},"hover_glyph":null,"nonselection_glyph":{"id":"343dc25c-373e-4abd-825f-14a692bc7048","type":"Circle"},"selection_glyph":{"id":"548b08ba-5440-4a0a-a0d7-6b646af5b34c","type":"Circle"}},"id":"c536c9d5-dd2c-4f1c-abfe-cd3a59fe676c","type":"GlyphRenderer"},{"attributes":{"callback":null,"column_names":["y","x"],"data":{"x":[1286323380000.0,1286323680000.0,1286323980000.0,1286324280000.0,1286324580000.0,1286324880000.0,1286325180000.0,1286325480000.0,1286325780000.0,1286326080000.0,1286326380000.0,1286326680000.0,1286326980000.0,1286327280000.0,1286327580000.0,1286327880000.0,1286328180000.0,1286328480000.0,1286328780000.0,1286329080000.0,1286329380000.0,1286329680000.0,1286329980000.0,1286330280000.0,1286330580000.0,1286330880000.0,1286331180000.0,1286331480000.0,1286331780000.0,1286332080000.0,1286332380000.0,1286332680000.0,1286332980000.0,1286333280000.0,1286333580000.0,1286333880000.0,1286334180000.0,1286334480000.0,1286334780000.0,1286335080000.0,1286335380000.0,1286335680000.0,1286335980000.0,1286336280000.0,1286336580000.0,1286336880000.0,1286337180000.0,1286337480000.0,1286337780000.0,1286338080000.0,1286338380000.0,1286338680000.0,1286338980000.0,1286339280000.0,1286339580000.0,1286339880000.0,1286340180000.0,1286340480000.0,1286340780000.0,1286341080000.0,1286341380000.0,1286341680000.0,1286341980000.0,1286342280000.0,1286342580000.0,1286342880000.0,1286343180000.0,1286343480000.0,1286343780000.0,1286344080000.0,1286344380000.0,1286344680000.0,1286344980000.0,1286345280000.0,1286345580000.0,1286345880000.0,1286346180000.0,1286346480000.0,1286346780000.0,1286347080000.0,1286347380000.0,1286347680000.0,1286347980000.0,1286348280000.0,1286348580000.0,1286348880000.0,1286349180000.0,1286349480000.0,1286349780000.0,1286350080000.0,1286350380000.0,1286350680000.0,1286350980000.0,1286351280000.0,1286351580000.0,1286351880000.0,1286352180000.0,1286352480000.0,1286352780000.0,1286353080000.0,1286353380000.0,1286353680000.0,1286353980000.0,1286354280000.0,1286354580000.0,1286354880000.0,1286355180000.0,1286355480000.0,1286355780000.0,1286356080000.0,1286356380000.0,1286356680000.0,1286356980000.0,1286357280000.0,1286357580000.0,1286357880000.0,1286358180000.0,1286358480000.0,1286358780000.0,1286359080000.0,1286359380000.0,1286359680000.0,1286359980000.0,1286360280000.0,1286360580000.0,1286360880000.0,1286361180000.0,1286361480000.0,1286361780000.0,1286362080000.0,1286362380000.0,1286362680000.0,1286362980000.0,1286363280000.0,1286363580000.0,1286363880000.0,1286364180000.0,1286364480000.0,1286364780000.0,1286365080000.0,1286365380000.0,1286365680000.0,1286365980000.0,1286366280000.0,1286366580000.0,1286366880000.0,1286367180000.0,1286367480000.0,1286367780000.0,1286368080000.0,1286368380000.0,1286368680000.0,1286368980000.0,1286369280000.0,1286369580000.0,1286369880000.0,1286370180000.0,1286370480000.0,1286370780000.0,1286371080000.0,1286371380000.0,1286371680000.0,1286371980000.0,1286372280000.0,1286372580000.0,1286372880000.0,1286373180000.0,1286373480000.0,1286373780000.0,1286374080000.0,1286374380000.0,1286374680000.0,1286374980000.0,1286375280000.0,1286375580000.0,1286375880000.0,1286376180000.0,1286376480000.0,1286376780000.0,1286377080000.0,1286377380000.0,1286377680000.0,1286377980000.0,1286378280000.0,1286378580000.0,1286378880000.0,1286379180000.0,1286379480000.0,1286379780000.0,1286380080000.0,1286380380000.0,1286380680000.0,1286380980000.0,1286381280000.0,1286381580000.0,1286381880000.0,1286382180000.0,1286382480000.0,1286382780000.0,1286383080000.0,1286383380000.0,1286383680000.0,1286383980000.0,1286384280000.0,1286384580000.0,1286384880000.0,1286385180000.0,1286385480000.0,1286385780000.0,1286386080000.0,1286386380000.0,1286386680000.0,1286386980000.0,1286387280000.0,1286387580000.0,1286387880000.0,1286388180000.0,1286388480000.0,1286388780000.0,1286389080000.0,1286389380000.0,1286389680000.0,1286389980000.0,1286390280000.0,1286390580000.0,1286390880000.0,1286391180000.0,1286391480000.0,1286391780000.0,1286392080000.0,1286392380000.0,1286392680000.0,1286392980000.0,1286393280000.0,1286393580000.0,1286393880000.0,1286394180000.0,1286394480000.0,1286394780000.0,1286395080000.0,1286395380000.0,1286395680000.0,1286395980000.0,1286396280000.0,1286396580000.0,1286396880000.0,1286397180000.0,1286397480000.0,1286397780000.0,1286398080000.0,1286398380000.0,1286398680000.0,1286398980000.0,1286399280000.0,1286399580000.0,1286399880000.0,1286400180000.0,1286400480000.0,1286400780000.0,1286401080000.0,1286401380000.0,1286401680000.0,1286401980000.0,1286402280000.0,1286402580000.0,1286402880000.0,1286403180000.0,1286403480000.0,1286403780000.0,1286404080000.0,1286404380000.0,1286404680000.0,1286404980000.0,1286405280000.0,1286405580000.0,1286405880000.0,1286406180000.0,1286406480000.0,1286406780000.0,1286407080000.0,1286407380000.0,1286407680000.0,1286407980000.0,1286408280000.0,1286408580000.0,1286408880000.0,1286409180000.0,1286409480000.0],"y":[143,147,150,152,152,152,154,155,142,140,138,134,131,130,128,127,126,126,126,126,127,129,131,132,134,136,136,136,136,135,134,132,130,130,130,129,128,127,125,124,123,123,122,121,120,118,115,112,111,111,110,110,109,108,107,107,107,108,107,105,105,105,105,104,103,102,99,97,96,94,94,93,93,92,91,92,94,95,96,97,99,102,104,112,112,112,111,110,107,104,105,105,103,99,96,94,95,102,114,128,144,160,173,185,196,205,209,214,219,226,234,241,248,255,260,265,268,270,272,271,271,268,265,261,256,253,250,246,244,241,237,233,229,225,222,204,200,197,193,190,186,182,179,175,171,168,164,158,154,151,148,145,141,133,139,152,173,196,217,233,244,249,250,253,256,260,263,265,265,264,260,254,246,234,217,200,188,181,175,169,164,159,154,147,138,132,129,127,123,117,111,106,104,103,100,94,88,83,78,75,73,71,69,68,67,67,68,70,71,71,70,69,68,67,67,67,66,67,69,71,74,76,78,80,80,80,80,80,80,82,84,87,90,92,87,87,86,86,86,86,87,87,87,85,83,82,83,87,95,107,118,130,141,149,172,179,187,201,214,221,225,230,232,230,223,216,208,199,191,185,181,177,176,177,176,173,171,169,163,154,152,153,154,154,153,151,150,150]}},"id":"31c2b7ec-5713-4b73-9dc2-6920135c192b","type":"ColumnDataSource"},{"attributes":{"callback":{"id":"d4cc8816-08f4-4420-b7d1-5b8c9fc76270","type":"CustomJS"},"mode":"hline","plot":{"id":"7dcece15-ce9d-4f0f-a3e9-cf4759e7ca80","subtype":"Figure","type":"Plot"},"renderers":[{"id":"c536c9d5-dd2c-4f1c-abfe-cd3a59fe676c","type":"GlyphRenderer"}],"tooltips":null},"id":"51f87da3-f5e3-4ac3-83fa-f5365a0d81ef","type":"HoverTool"},{"attributes":{"callback":null},"id":"09bdc473-32a6-4a7d-928a-eef160a59178","type":"DataRange1d"},{"attributes":{"fill_alpha":{"value":0.05},"line_color":{"value":null},"size":{"units":"screen","value":20},"x":{"field":"x"},"y":{"field":"y"}},"id":"343dc25c-373e-4abd-825f-14a692bc7048","type":"Circle"},{"attributes":{"base":24,"mantissas":[1,2,4,6,8,12],"max_interval":43200000.0,"min_interval":3600000.0,"num_minor_ticks":0},"id":"a453fccf-eef3-47cf-bb89-9ac9bf7eb7ef","type":"AdaptiveTicker"},{"attributes":{"below":[{"id":"d3b34dea-86f5-46fd-9f0c-f071e91fa6c8","type":"DatetimeAxis"}],"left":[{"id":"c4bb0680-1462-4a91-b0ea-93ed1d57f70e","type":"LinearAxis"}],"plot_height":768,"plot_width":1024,"renderers":[{"id":"d3b34dea-86f5-46fd-9f0c-f071e91fa6c8","type":"DatetimeAxis"},{"id":"2fc43df0-cbc1-4705-b5b4-e29750419802","type":"Grid"},{"id":"c4bb0680-1462-4a91-b0ea-93ed1d57f70e","type":"LinearAxis"},{"id":"9b94e5cc-f2ad-44d5-b195-aece9280d329","type":"Grid"},{"id":"a34fb8d7-1d7a-423d-83f8-b609d2016738","type":"GlyphRenderer"},{"id":"c536c9d5-dd2c-4f1c-abfe-cd3a59fe676c","type":"GlyphRenderer"}],"title":{"id":"31bba731-35f1-4a86-af10-3c6e2bd4842d","type":"Title"},"tool_events":{"id":"accdc82b-7348-47f1-ba19-14d029078444","type":"ToolEvents"},"toolbar":{"id":"9e7c52af-5215-4e58-868f-c712ec4f46bd","type":"Toolbar"},"toolbar_location":null,"x_range":{"id":"0115c902-9259-4e10-812a-b87822ad873b","type":"DataRange1d"},"y_range":{"id":"09bdc473-32a6-4a7d-928a-eef160a59178","type":"DataRange1d"}},"id":"7dcece15-ce9d-4f0f-a3e9-cf4759e7ca80","subtype":"Figure","type":"Plot"},{"attributes":{"callback":null,"column_names":["y","x"],"data":{"x":[1286323380000.0,1286323680000.0,1286323980000.0,1286324280000.0,1286324580000.0,1286324880000.0,1286325180000.0,1286325480000.0,1286325780000.0,1286326080000.0,1286326380000.0,1286326680000.0,1286326980000.0,1286327280000.0,1286327580000.0,1286327880000.0,1286328180000.0,1286328480000.0,1286328780000.0,1286329080000.0,1286329380000.0,1286329680000.0,1286329980000.0,1286330280000.0,1286330580000.0,1286330880000.0,1286331180000.0,1286331480000.0,1286331780000.0,1286332080000.0,1286332380000.0,1286332680000.0,1286332980000.0,1286333280000.0,1286333580000.0,1286333880000.0,1286334180000.0,1286334480000.0,1286334780000.0,1286335080000.0,1286335380000.0,1286335680000.0,1286335980000.0,1286336280000.0,1286336580000.0,1286336880000.0,1286337180000.0,1286337480000.0,1286337780000.0,1286338080000.0,1286338380000.0,1286338680000.0,1286338980000.0,1286339280000.0,1286339580000.0,1286339880000.0,1286340180000.0,1286340480000.0,1286340780000.0,1286341080000.0,1286341380000.0,1286341680000.0,1286341980000.0,1286342280000.0,1286342580000.0,1286342880000.0,1286343180000.0,1286343480000.0,1286343780000.0,1286344080000.0,1286344380000.0,1286344680000.0,1286344980000.0,1286345280000.0,1286345580000.0,1286345880000.0,1286346180000.0,1286346480000.0,1286346780000.0,1286347080000.0,1286347380000.0,1286347680000.0,1286347980000.0,1286348280000.0,1286348580000.0,1286348880000.0,1286349180000.0,1286349480000.0,1286349780000.0,1286350080000.0,1286350380000.0,1286350680000.0,1286350980000.0,1286351280000.0,1286351580000.0,1286351880000.0,1286352180000.0,1286352480000.0,1286352780000.0,1286353080000.0,1286353380000.0,1286353680000.0,1286353980000.0,1286354280000.0,1286354580000.0,1286354880000.0,1286355180000.0,1286355480000.0,1286355780000.0,1286356080000.0,1286356380000.0,1286356680000.0,1286356980000.0,1286357280000.0,1286357580000.0,1286357880000.0,1286358180000.0,1286358480000.0,1286358780000.0,1286359080000.0,1286359380000.0,1286359680000.0,1286359980000.0,1286360280000.0,1286360580000.0,1286360880000.0,1286361180000.0,1286361480000.0,1286361780000.0,1286362080000.0,1286362380000.0,1286362680000.0,1286362980000.0,1286363280000.0,1286363580000.0,1286363880000.0,1286364180000.0,1286364480000.0,1286364780000.0,1286365080000.0,1286365380000.0,1286365680000.0,1286365980000.0,1286366280000.0,1286366580000.0,1286366880000.0,1286367180000.0,1286367480000.0,1286367780000.0,1286368080000.0,1286368380000.0,1286368680000.0,1286368980000.0,1286369280000.0,1286369580000.0,1286369880000.0,1286370180000.0,1286370480000.0,1286370780000.0,1286371080000.0,1286371380000.0,1286371680000.0,1286371980000.0,1286372280000.0,1286372580000.0,1286372880000.0,1286373180000.0,1286373480000.0,1286373780000.0,1286374080000.0,1286374380000.0,1286374680000.0,1286374980000.0,1286375280000.0,1286375580000.0,1286375880000.0,1286376180000.0,1286376480000.0,1286376780000.0,1286377080000.0,1286377380000.0,1286377680000.0,1286377980000.0,1286378280000.0,1286378580000.0,1286378880000.0,1286379180000.0,1286379480000.0,1286379780000.0,1286380080000.0,1286380380000.0,1286380680000.0,1286380980000.0,1286381280000.0,1286381580000.0,1286381880000.0,1286382180000.0,1286382480000.0,1286382780000.0,1286383080000.0,1286383380000.0,1286383680000.0,1286383980000.0,1286384280000.0,1286384580000.0,1286384880000.0,1286385180000.0,1286385480000.0,1286385780000.0,1286386080000.0,1286386380000.0,1286386680000.0,1286386980000.0,1286387280000.0,1286387580000.0,1286387880000.0,1286388180000.0,1286388480000.0,1286388780000.0,1286389080000.0,1286389380000.0,1286389680000.0,1286389980000.0,1286390280000.0,1286390580000.0,1286390880000.0,1286391180000.0,1286391480000.0,1286391780000.0,1286392080000.0,1286392380000.0,1286392680000.0,1286392980000.0,1286393280000.0,1286393580000.0,1286393880000.0,1286394180000.0,1286394480000.0,1286394780000.0,1286395080000.0,1286395380000.0,1286395680000.0,1286395980000.0,1286396280000.0,1286396580000.0,1286396880000.0,1286397180000.0,1286397480000.0,1286397780000.0,1286398080000.0,1286398380000.0,1286398680000.0,1286398980000.0,1286399280000.0,1286399580000.0,1286399880000.0,1286400180000.0,1286400480000.0,1286400780000.0,1286401080000.0,1286401380000.0,1286401680000.0,1286401980000.0,1286402280000.0,1286402580000.0,1286402880000.0,1286403180000.0,1286403480000.0,1286403780000.0,1286404080000.0,1286404380000.0,1286404680000.0,1286404980000.0,1286405280000.0,1286405580000.0,1286405880000.0,1286406180000.0,1286406480000.0,1286406780000.0,1286407080000.0,1286407380000.0,1286407680000.0,1286407980000.0,1286408280000.0,1286408580000.0,1286408880000.0,1286409180000.0,1286409480000.0],"y":[143,147,150,152,152,152,154,155,142,140,138,134,131,130,128,127,126,126,126,126,127,129,131,132,134,136,136,136,136,135,134,132,130,130,130,129,128,127,125,124,123,123,122,121,120,118,115,112,111,111,110,110,109,108,107,107,107,108,107,105,105,105,105,104,103,102,99,97,96,94,94,93,93,92,91,92,94,95,96,97,99,102,104,112,112,112,111,110,107,104,105,105,103,99,96,94,95,102,114,128,144,160,173,185,196,205,209,214,219,226,234,241,248,255,260,265,268,270,272,271,271,268,265,261,256,253,250,246,244,241,237,233,229,225,222,204,200,197,193,190,186,182,179,175,171,168,164,158,154,151,148,145,141,133,139,152,173,196,217,233,244,249,250,253,256,260,263,265,265,264,260,254,246,234,217,200,188,181,175,169,164,159,154,147,138,132,129,127,123,117,111,106,104,103,100,94,88,83,78,75,73,71,69,68,67,67,68,70,71,71,70,69,68,67,67,67,66,67,69,71,74,76,78,80,80,80,80,80,80,82,84,87,90,92,87,87,86,86,86,86,87,87,87,85,83,82,83,87,95,107,118,130,141,149,172,179,187,201,214,221,225,230,232,230,223,216,208,199,191,185,181,177,176,177,176,173,171,169,163,154,152,153,154,154,153,151,150,150]}},"id":"a5c7075c-e3f0-4c82-9dc4-bd5ce758172a","type":"ColumnDataSource"},{"attributes":{"days":[1,4,7,10,13,16,19,22,25,28]},"id":"a9914f04-d8b5-4c67-bad4-fccf3068349e","type":"DaysTicker"},{"attributes":{"base":60,"mantissas":[1,2,5,10,15,20,30],"max_interval":1800000.0,"min_interval":1000.0,"num_minor_ticks":0},"id":"5a354763-962d-4e28-8213-e732e138e56b","type":"AdaptiveTicker"},{"attributes":{},"id":"c6fc2b7a-5ed1-45fe-bf02-0aafe023d334","type":"DatetimeTickFormatter"},{"attributes":{"months":[0,2,4,6,8,10]},"id":"f2c64510-3572-42f4-a431-05007e091544","type":"MonthsTicker"},{"attributes":{"days":[1,8,15,22]},"id":"50abc040-b4f3-4bbb-a872-52b8f3d17388","type":"DaysTicker"},{"attributes":{"months":[0,1,2,3,4,5,6,7,8,9,10,11]},"id":"e6829d07-33d9-467c-8f37-eac0d8e14e73","type":"MonthsTicker"},{"attributes":{"max_interval":500.0,"num_minor_ticks":0},"id":"ced11051-d06e-427e-87b6-6c314a370495","type":"AdaptiveTicker"},{"attributes":{},"id":"aff157ad-773b-425a-9fc3-8a3e44830bcc","type":"BasicTicker"},{"attributes":{"callback":null},"id":"0115c902-9259-4e10-812a-b87822ad873b","type":"DataRange1d"},{"attributes":{"num_minor_ticks":5},"id":"7a7c324f-2661-45aa-8290-73412ed6f5d4","type":"DatetimeTicker"},{"attributes":{"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"line_dash":[4,4],"x":{"field":"x"},"y":{"field":"y"}},"id":"a9bf1862-cece-4b5a-92a1-570d461a49cb","type":"Line"},{"attributes":{"plot":null,"text":"E-Statics Demo"},"id":"31bba731-35f1-4a86-af10-3c6e2bd4842d","type":"Title"},{"attributes":{"months":[0,6]},"id":"803c9151-1910-43dd-98dc-25095b18de19","type":"MonthsTicker"},{"attributes":{"plot":{"id":"7dcece15-ce9d-4f0f-a3e9-cf4759e7ca80","subtype":"Figure","type":"Plot"},"ticker":{"id":"7a7c324f-2661-45aa-8290-73412ed6f5d4","type":"DatetimeTicker"}},"id":"2fc43df0-cbc1-4705-b5b4-e29750419802","type":"Grid"},{"attributes":{"months":[0,4,8]},"id":"0cce7dbe-397b-4f26-8ef6-c72ce73d86bc","type":"MonthsTicker"},{"attributes":{"formatter":{"id":"1e07e9d6-9f29-40ef-b3ac-75018373ad8b","type":"BasicTickFormatter"},"plot":{"id":"7dcece15-ce9d-4f0f-a3e9-cf4759e7ca80","subtype":"Figure","type":"Plot"},"ticker":{"id":"aff157ad-773b-425a-9fc3-8a3e44830bcc","type":"BasicTicker"}},"id":"c4bb0680-1462-4a91-b0ea-93ed1d57f70e","type":"LinearAxis"},{"attributes":{"line_color":{"value":"gray"},"line_dash":[4,4],"x":{"field":"x"},"y":{"field":"y"}},"id":"ce1c9dd1-4b38-44e9-b2f7-c3f2d7bcf0b7","type":"Line"},{"attributes":{"args":{"source":{"id":"a5c7075c-e3f0-4c82-9dc4-bd5ce758172a","type":"ColumnDataSource"}},"code":"source.set('selected', cb_data['index']);"},"id":"d4cc8816-08f4-4420-b7d1-5b8c9fc76270","type":"CustomJS"},{"attributes":{"formatter":{"id":"c6fc2b7a-5ed1-45fe-bf02-0aafe023d334","type":"DatetimeTickFormatter"},"plot":{"id":"7dcece15-ce9d-4f0f-a3e9-cf4759e7ca80","subtype":"Figure","type":"Plot"},"ticker":{"id":"7a7c324f-2661-45aa-8290-73412ed6f5d4","type":"DatetimeTicker"}},"id":"d3b34dea-86f5-46fd-9f0c-f071e91fa6c8","type":"DatetimeAxis"},{"attributes":{"active_drag":"auto","active_scroll":"auto","active_tap":"auto","tools":[{"id":"51f87da3-f5e3-4ac3-83fa-f5365a0d81ef","type":"HoverTool"}]},"id":"9e7c52af-5215-4e58-868f-c712ec4f46bd","type":"Toolbar"},{"attributes":{},"id":"1e07e9d6-9f29-40ef-b3ac-75018373ad8b","type":"BasicTickFormatter"},{"attributes":{},"id":"763d2c42-e7a2-4589-a3d6-284122059511","type":"YearsTicker"},{"attributes":{"dimension":1,"plot":{"id":"7dcece15-ce9d-4f0f-a3e9-cf4759e7ca80","subtype":"Figure","type":"Plot"},"ticker":{"id":"aff157ad-773b-425a-9fc3-8a3e44830bcc","type":"BasicTicker"}},"id":"9b94e5cc-f2ad-44d5-b195-aece9280d329","type":"Grid"},{"attributes":{"fill_alpha":{"value":0.5},"fill_color":{"value":"firebrick"},"line_color":{"value":null},"size":{"units":"screen","value":20},"x":{"field":"x"},"y":{"field":"y"}},"id":"548b08ba-5440-4a0a-a0d7-6b646af5b34c","type":"Circle"},{"attributes":{"days":[1,15]},"id":"9fc235bc-d815-4f75-a19f-4198b7e5d1dd","type":"DaysTicker"},{"attributes":{"days":[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31]},"id":"5381ecf8-3041-4698-899a-c5b513d96a21","type":"DaysTicker"},{"attributes":{},"id":"accdc82b-7348-47f1-ba19-14d029078444","type":"ToolEvents"}],"root_ids":["7dcece15-ce9d-4f0f-a3e9-cf4759e7ca80"]},"title":"Bokeh Application","version":"0.12.3"}};
-                var render_items = [{"docid":"9adbeec8-bf1a-4cff-a904-5fd2b8840898","elementid":"ef291ad1-36c0-4c7b-a07a-74b35e915c5e","modelid":"7dcece15-ce9d-4f0f-a3e9-cf4759e7ca80"}];
+<head>
+	<meta charset="utf-8" />
+	<link rel="icon" type="image/png" href="/static/aboutus/img/favicon.ico">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+	<title>Dashboard</title>
+
+	<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+    <meta name="viewport" content="width=device-width" />
+
+
+    <!-- Bootstrap core CSS     -->
+    <link href="/static/aboutus/css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Animation library for notifications   -->
+    <link href="/static/aboutus/css/animate.min.css" rel="stylesheet"/>
+
+    <!--  Light Bootstrap Table core CSS    -->
+    <link href="/static/aboutus/css/light-bootstrap-dashboard.css" rel="stylesheet"/>
+
+
+    <!--  CSS for Demo Purpose, don't include it in your project     -->
+    <link href="/static/aboutus/css/demo.css" rel="stylesheet" />
+
+
+    <!--     Fonts and icons     -->
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,700,300' rel='stylesheet' type='text/css'>
+    <link href="/static/aboutus/css/pe-icon-7-stroke.css" rel="stylesheet" />
+
+</head>
+<body>
+
+<div class="wrapper">
+    <div class="sidebar" data-color="red" data-image="/static/aboutus/img/sidebar-5.jpg">
+
+    <!--
+
+        Tip 1: you can change the color of the sidebar using: data-color="blue | azure | green | orange | red | purple"
+        Tip 2: you can also add an image using data-image tag
+
+    -->
+
+    	<div class="sidebar-wrapper">
+            <div class="logo">
+                <a href="#" class="simple-text">
+                    E-Statics
+                </a>
+            </div>
+
+            <ul class="nav">
+                <li class="active">
+                    <a href="dashboard.html">
+                        <i class="pe-7s-graph"></i>
+                        <p>Dashboard</p>
+                    </a>
+                </li>
+                <li>
+                    
+                </li>
                 
-                Bokeh.embed.embed_items(docs_json, render_items);
+            </ul>
+    	</div>
+    </div>
+
+    <div class="main-panel">
+        <nav class="navbar navbar-default navbar-fixed">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navigation-example-2">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">Dashboard</a>
+                </div>
+                <div class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav navbar-left">
+                        <li>
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                <i class="fa fa-dashboard"></i>
+                            </a>
+                        </li>
+                        
+                        <li>
+                           <a href="">
+                                <i class="fa fa-search"></i>
+                            </a>
+                        </li>
+                    </ul>
+
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                           <a href="">
+                               Account
+                            </a>
+                        </li>
+                        <li class="dropdown">
+                              <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                    Dropdown
+                                    <b class="caret"></b>
+                              </a>
+                              <ul class="dropdown-menu">
+                                <li><a href="#">Action</a></li>
+                                <li><a href="#">Another action</a></li>
+                                <li><a href="#">Something</a></li>
+                                <li><a href="#">Another action</a></li>
+                                <li><a href="#">Something</a></li>
+                                <li class="divider"></li>
+                                <li><a href="#">Separated link</a></li>
+                              </ul>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Log out
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+
+        <div class="content">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card">
+                            <div class="header">
+                                <h4 class="title">Email Statistics</h4>
+                                <p class="category">Last Campaign Performance</p>
+                            </div>
+                            <div class="content">
+                                <div id="chartPreferences" class="ct-chart ct-perfect-fourth"></div>
+
+                                <div class="footer">
+                                    <div class="legend">
+                                        <i class="fa fa-circle text-info"></i> Open
+                                        <i class="fa fa-circle text-danger"></i> Bounce
+                                        <i class="fa fa-circle text-warning"></i> Unsubscribe
+                                    </div>
+                                    <hr>
+                                    <div class="stats">
+                                        <i class="fa fa-clock-o"></i> Campaign sent 2 days ago
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-8">
+                        <div class="card">
+                            <div class="header">
+                                <h4 class="title">Users Behavior</h4>
+                                <p class="category">24 Hours performance</p>
+                            </div>
+                            <div class="content">
+                                <div id="chartHours" class="ct-chart"></div>
+                                <div class="footer">
+                                    <div class="legend">
+                                        <i class="fa fa-circle text-info"></i> Open
+                                        <i class="fa fa-circle text-danger"></i> Click
+                                        <i class="fa fa-circle text-warning"></i> Click Second Time
+                                    </div>
+                                    <hr>
+                                    <div class="stats">
+                                        <i class="fa fa-history"></i> Updated 3 minutes ago
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="card ">
+                            <div class="header">
+                                <h4 class="title">2014 Sales</h4>
+                                <p class="category">All products including Taxes</p>
+                            </div>
+                            <div class="content">
+                                <div id="chartActivity" class="ct-chart"></div>
+
+                                <div class="footer">
+                                    <div class="legend">
+                                        <i class="fa fa-circle text-info"></i> Tesla Model S
+                                        <i class="fa fa-circle text-danger"></i> BMW 5 Series
+                                    </div>
+                                    <hr>
+                                    <div class="stats">
+                                        <i class="fa fa-check"></i> Data information certified
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="card ">
+                            <div class="header">
+                                <h4 class="title">Tasks</h4>
+                                <p class="category">Backend development</p>
+                            </div>
+                            <div class="content">
+                                <div class="table-full-width">
+                                    <table class="table">
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    <label class="checkbox">
+                                                        <input type="checkbox" value="" data-toggle="checkbox">
+                                                    </label>
+                                                </td>
+                                                <td>Sign contract for "What are conference organizers afraid of?"</td>
+                                                <td class="td-actions text-right">
+                                                    <button type="button" rel="tooltip" title="Edit Task" class="btn btn-info btn-simple btn-xs">
+                                                        <i class="fa fa-edit"></i>
+                                                    </button>
+                                                    <button type="button" rel="tooltip" title="Remove" class="btn btn-danger btn-simple btn-xs">
+                                                        <i class="fa fa-times"></i>
+                                                    </button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <label class="checkbox">
+                                                        <input type="checkbox" value="" data-toggle="checkbox" checked="">
+                                                    </label>
+                                                </td>
+                                                <td>Lines From Great Russian Literature? Or E-mails From My Boss?</td>
+                                                <td class="td-actions text-right">
+                                                    <button type="button" rel="tooltip" title="Edit Task" class="btn btn-info btn-simple btn-xs">
+                                                        <i class="fa fa-edit"></i>
+                                                    </button>
+                                                    <button type="button" rel="tooltip" title="Remove" class="btn btn-danger btn-simple btn-xs">
+                                                        <i class="fa fa-times"></i>
+                                                    </button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <label class="checkbox">
+                                                        <input type="checkbox" value="" data-toggle="checkbox" checked="">
+                                                    </label>
+                                                </td>
+                                                <td>Flooded: One year later, assessing what was lost and what was found when a ravaging rain swept through metro Detroit
+</td>
+                                                <td class="td-actions text-right">
+                                                    <button type="button" rel="tooltip" title="Edit Task" class="btn btn-info btn-simple btn-xs">
+                                                        <i class="fa fa-edit"></i>
+                                                    </button>
+                                                    <button type="button" rel="tooltip" title="Remove" class="btn btn-danger btn-simple btn-xs">
+                                                        <i class="fa fa-times"></i>
+                                                    </button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <label class="checkbox">
+                                                        <input type="checkbox" value="" data-toggle="checkbox">
+                                                    </label>
+                                                </td>
+                                                <td>Create 4 Invisible User Experiences you Never Knew About</td>
+                                                <td class="td-actions text-right">
+                                                    <button type="button" rel="tooltip" title="Edit Task" class="btn btn-info btn-simple btn-xs">
+                                                        <i class="fa fa-edit"></i>
+                                                    </button>
+                                                    <button type="button" rel="tooltip" title="Remove" class="btn btn-danger btn-simple btn-xs">
+                                                        <i class="fa fa-times"></i>
+                                                    </button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <label class="checkbox">
+                                                        <input type="checkbox" value="" data-toggle="checkbox">
+                                                    </label>
+                                                </td>
+                                                <td>Read "Following makes Medium better"</td>
+                                                <td class="td-actions text-right">
+                                                    <button type="button" rel="tooltip" title="Edit Task" class="btn btn-info btn-simple btn-xs">
+                                                        <i class="fa fa-edit"></i>
+                                                    </button>
+                                                    <button type="button" rel="tooltip" title="Remove" class="btn btn-danger btn-simple btn-xs">
+                                                        <i class="fa fa-times"></i>
+                                                    </button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <label class="checkbox">
+                                                        <input type="checkbox" value="" data-toggle="checkbox">
+                                                    </label>
+                                                </td>
+                                                <td>Unfollow 5 enemies from twitter</td>
+                                                <td class="td-actions text-right">
+                                                    <button type="button" rel="tooltip" title="Edit Task" class="btn btn-info btn-simple btn-xs">
+                                                        <i class="fa fa-edit"></i>
+                                                    </button>
+                                                    <button type="button" rel="tooltip" title="Remove" class="btn btn-danger btn-simple btn-xs">
+                                                        <i class="fa fa-times"></i>
+                                                    </button>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+
+                                <div class="footer">
+                                    <hr>
+                                   
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <footer class="footer">
+            <div class="container-fluid">
+                <nav class="pull-left">
+                    <ul>
+                        <li>
+                            <a href="#">
+                                Home
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Company
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Portfolio
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                               Blog
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <p class="copyright pull-right">
+                    &copy; 2016 <a href="#">E-Statics</a>, Data Matters
+                </p>
+            </div>
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+
+    <!--   Core JS Files   -->
+    <script src="/static/aboutus/js/jquery-1.10.2.js" type="text/javascript"></script>
+	<script src="/static/aboutus/js/bootstrap.min.js" type="text/javascript"></script>
+
+	<!--  Checkbox, Radio & Switch Plugins -->
+	<script src="/static/aboutus/js/bootstrap-checkbox-radio-switch.js"></script>
+
+	<!--  Charts Plugin -->
+	<script src="/static/aboutus/js/chartist.min.js"></script>
+
+    <!--  Notifications Plugin    -->
+    <script src="/static/aboutus/js/bootstrap-notify.js"></script>
+
+    <!--  Google Maps Plugin    -->
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+
+    <!-- Light Bootstrap Table Core javascript and methods for Demo purpose -->
+	<script src="/static/aboutus/js/light-bootstrap-dashboard.js"></script>
+
+	<!-- Light Bootstrap Table DEMO methods, don't include it in your project! -->
+	<script src="/static/aboutus/js/demo.js"></script>
+
+	<script type="text/javascript">
+    	$(document).ready(function(){
+
+        	demo.initChartist();
+
+        	$.notify({
+            	icon: 'pe-7s-gift',
+            	message: "Welcome to <b>E-Statics</b>"
+
+            },{
+                type: 'info',
+                timer: 4000
             });
-        });
-        </script>
-    </body>
+
+    	});
+	</script>
+
 </html>
