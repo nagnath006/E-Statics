@@ -12,7 +12,7 @@
 [pypy]: https://pypi.python.org/pypi/codeclimate-test-reporter
 
 
-A web Application which represents statistical information of various data sets.
+A web Application which Interactively Visualises unstructured information of various data sets.
 ![Alt text](data.PNG?raw=true "E-Statics")
 ![Alt text](Capture.PNG?raw=true "E-Statics")
  
