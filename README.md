@@ -1,7 +1,11 @@
 # E-Statics
+[![Build Status](https://travis-ci.org/nagnath006/E-Statics.png)](https://travis-ci.org/nagnath006/E-Statics)
+
+
 [![Code Climate][cc-badge]][cc-repo]
+
 [![Test Coverage][cc-coverage-badge]][cc-coverage]
-[![PyPI version][pypy-badge]][pypy]
+
 
 [cc-badge]: https://codeclimate.com/github/codeclimate/python-test-reporter/badges/gpa.svg
 [cc-coverage-badge]: https://codeclimate.com/github/codeclimate/python-test-reporter/badges/coverage.svg
