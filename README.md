@@ -14,7 +14,6 @@
 [pypy-badge]: https://badge.fury.io/py/codeclimate-test-reporter.svg
 [pypy]: https://pypi.python.org/pypi/codeclimate-test-reporter
 
-[![Build Status](https://travis-ci.org/nagnath006/E-Statics.png)](https://travis-ci.org/nagnath006/E-Statics)
 
 A web Application which represnts statistical information of various data sets.
 ![Alt text](data.PNG?raw=true "E-Statics")
