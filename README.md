@@ -1,10 +1,7 @@
 # E-Statics
 [![Build Status](https://travis-ci.org/nagnath006/E-Statics.png)](https://travis-ci.org/nagnath006/E-Statics)
-
-
-[![Code Climate][cc-badge]][cc-repo]
-
-[![Test Coverage][cc-coverage-badge]][cc-coverage]
+  [![Code Climate Score][cc-badge]][cc-repo]
+  [![Test Coverage][cc-coverage-badge]][cc-coverage]
 
 
 [cc-badge]: https://codeclimate.com/github/codeclimate/python-test-reporter/badges/gpa.svg
