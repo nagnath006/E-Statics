@@ -16,7 +16,7 @@ env:
 
 #commands to install dependencies
 install:
-  - pip install -q Django==$DJANGO
+  - pip install -q Django==1.10
   
 
 before_script:
