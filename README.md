@@ -11,7 +11,7 @@
 <tr>  <td>Code Climate Version</td><td>  <img src="https://codeclimate.com/github/codeclimate/python-test-reporter/badges/gpa.svg" alt="Code Climate Version" /></td></tr>
  <tr><td>Coverage Score</td> <td> <img src="https://codeclimate.com/github/codeclimate/python-test-reporter/badges/coverage.svg" alt="Code Coverage Score" /></td></tr>
  <tr>
-  <td>PyPI</td>
+  <td>PyPI Version</td>
   <td>
     <img src="https://badge.fury.io/py/codeclimate-test-reporter.svg" alt="pypy" />
   </td>
