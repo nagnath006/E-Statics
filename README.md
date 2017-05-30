@@ -8,7 +8,7 @@
     </a>
   </td></tr>
 
-<tr>  <td>Code Climate Version</td><td> <a href="https://codeclimate.com/github/codeclimate/python-test-reporter"/> <img src="https://codeclimate.com/github/codeclimate/python-test-reporter/badges/gpa.svg" alt="Code Climate Version" /></td></tr>
+<tr>  <td>Code Climate Grade(Out of 5)</td><td> <a href="https://codeclimate.com/github/codeclimate/python-test-reporter"/> <img src="https://codeclimate.com/github/codeclimate/python-test-reporter/badges/gpa.svg" alt="Code Climate Version" /></td></tr>
  <tr><td>Coverage Score</td> <td> <a href="https://codeclimate.com/github/codeclimate/python-test-reporter/coverage"/> <img src="https://codeclimate.com/github/codeclimate/python-test-reporter/badges/coverage.svg" alt="Code Coverage Score" /></td></tr>
  <tr>
   <td>PyPI Version</td>
