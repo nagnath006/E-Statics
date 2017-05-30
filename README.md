@@ -1,9 +1,11 @@
 # E-Statics
-[![Build Status](https://travis-ci.org/nagnath006/E-Statics.png)](https://travis-ci.org/nagnath006/E-Statics)
-  [![Code Climate Score][cc-badge]][cc-repo]
-  [![Test Coverage][cc-coverage-badge]][cc-coverage]
+<table>
+<tr>
+<td>[![Build Status](https://travis-ci.org/nagnath006/E-Statics.png)](https://travis-ci.org/nagnath006/E-Statics)</td></tr>
+<tr> <td> [![Code Climate Score][cc-badge]][cc-repo] </td></tr>
+ <tr> <td>[![Test Coverage][cc-coverage-badge]][cc-coverage]</td></tr>
 
-
+</table>
 [cc-badge]: https://codeclimate.com/github/codeclimate/python-test-reporter/badges/gpa.svg
 [cc-coverage-badge]: https://codeclimate.com/github/codeclimate/python-test-reporter/badges/coverage.svg
 [cc-repo]: https://codeclimate.com/github/codeclimate/python-test-reporter
