@@ -1,13 +1,14 @@
 # E-Statics
 <table>
 <tr>
+ <td>Build Status</td>
 <td>
     <a href="https://travis-ci.org/nagnath006/E-Statics">
     <img src="https://travis-ci.org/bokeh/bokeh.svg?branch=master" alt="build status" />
     </a>
   </td></tr>
 
-<tr> <td> [![Code Climate Score][cc-badge]][cc-repo] </td></tr>
+<tr> <td>  <img src="https://codeclimate.com/github/codeclimate/python-test-reporter" alt="build status" /></td></tr>
  <tr> <td>[![Test Coverage][cc-coverage-badge]][cc-coverage]</td></tr>
 
 
