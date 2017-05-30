@@ -1,12 +1,28 @@
 language: python
+
 python:
   - "2.7"
+
+services: mysql
+
 env:
-  - DJANGO=1.10
+  global:
+    - DJANGO_SETTINGS_MODULE="helloapp.settings"
+    - PYTHONPATH="/home/travis/build/nagnath006/E-Statics"
+    - PIP_USE_MIRRORS=true
+    - BUILD_ON_TRAVIS=true
+  matrix:
+    - DJANGO=1.10 DB=mysql
+
+#commands to install dependencies
 install:
-  - pip install --use-mirrors -q Django==$DJANGO 
-  - pip install coveralls
+  - pip install -q Django==$DJANGO
+  
+
+before_script:
+  - mysql -e 'create database travis_ci_db;'
+  - python manage.py syncdb --noinput
+
+#command to run the test suite
 script:
-  - coverage run --source= setup.py test
-after_success:
-  - coveralls
+  - python manage.py test
