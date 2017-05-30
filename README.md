@@ -1,7 +1,7 @@
 # E-Statics
 <table>
 <tr>
-<td>(https://travis-ci.org/nagnath006/E-Statics.png)](https://travis-ci.org/nagnath006/E-Statics)</td></tr>
+[![Build Status](https://travis-ci.org/nagnath006/E-Statics.png)](https://travis-ci.org/nagnath006/E-Statics)</tr>
 <tr> <td> [![Code Climate Score][cc-badge]][cc-repo] </td></tr>
  <tr> <td>[![Test Coverage][cc-coverage-badge]][cc-coverage]</td></tr>
 
