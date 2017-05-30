@@ -8,7 +8,7 @@
     </a>
   </td></tr>
 
-<tr> <td>  <img src="https://codeclimate.com/github/codeclimate/python-test-reporter" alt="build status" /></td></tr>
+<tr> <td>  <img src="https://codeclimate.com/github/codeclimate/python-test-reporter/badges/gpa.svg" alt="Coverage score" /></td></tr>
  <tr> <td>[![Test Coverage][cc-coverage-badge]][cc-coverage]</td></tr>
 
 
