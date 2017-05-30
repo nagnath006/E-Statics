@@ -10,6 +10,12 @@
 
 <tr>  <td>Code Climate Version</td><td>  <img src="https://codeclimate.com/github/codeclimate/python-test-reporter/badges/gpa.svg" alt="Code Climate Version" /></td></tr>
  <tr><td>Coverage Score</td> <td> <img src="https://codeclimate.com/github/codeclimate/python-test-reporter/badges/coverage.svg" alt="Code Coverage Score" /></td></tr>
+ <tr>
+  <td>PyPI</td>
+  <td>
+    <img src=" https://badge.fury.io/py/codeclimate-test-reporter.svg" />
+  </td>
+</tr>
 
 
 [cc-badge]: https://codeclimate.com/github/codeclimate/python-test-reporter/badges/gpa.svg
@@ -25,6 +31,6 @@ A web Application which Interactively Visualises unstructured information of var
 ![Alt text](data.PNG?raw=true "E-Statics")
 ![Alt text](Capture.PNG?raw=true "E-Statics")
  
-<img src="https://travis-ci.org/nagnath006/E-Statics" alt="build status" />
+
 
 
