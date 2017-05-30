@@ -1,7 +1,8 @@
 # E-Statics
 <table>
 <tr>
-[![Build Status](https://travis-ci.org/nagnath006/E-Statics.png)](https://travis-ci.org/nagnath006/E-Statics)</tr>
+<td><img src="https://travis-ci.org/nagnath006/E-Statics" alt="build status" /></td></tr>
+
 <tr> <td> [![Code Climate Score][cc-badge]][cc-repo] </td></tr>
  <tr> <td>[![Test Coverage][cc-coverage-badge]][cc-coverage]</td></tr>
 
@@ -19,3 +20,4 @@ A web Application which Interactively Visualises unstructured information of var
 ![Alt text](data.PNG?raw=true "E-Statics")
 ![Alt text](Capture.PNG?raw=true "E-Statics")
  
+<img src="https://travis-ci.org/nagnath006/E-Statics" alt="build status" />
