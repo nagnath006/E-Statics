@@ -13,7 +13,7 @@
  <tr>
   <td>PyPI</td>
   <td>
-    <img src=" https://badge.fury.io/py/codeclimate-test-reporter.svg" />
+    <img src=" https://badge.fury.io/py/codeclimate-test-reporter.svg" alt="pypy" />
   </td>
 </tr>
 
