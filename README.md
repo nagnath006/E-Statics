@@ -8,8 +8,8 @@
     </a>
   </td></tr>
 
-<tr> <td>  <img src="https://codeclimate.com/github/codeclimate/python-test-reporter/badges/gpa.svg" alt="Coverage score" /></td></tr>
- <tr> <td>[![Test Coverage][cc-coverage-badge]][cc-coverage]</td></tr>
+<tr> <td>  <img src="https://codeclimate.com/github/codeclimate/python-test-reporter/badges/gpa.svg" alt="Code Climate Version" /></td></tr>
+ <tr> <td> <img src="https://codeclimate.com/github/codeclimate/python-test-reporter/badges/coverage.svg" alt="Code Coverage Score" /></td></tr>
 
 
 [cc-badge]: https://codeclimate.com/github/codeclimate/python-test-reporter/badges/gpa.svg
