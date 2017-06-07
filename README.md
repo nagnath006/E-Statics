@@ -18,13 +18,6 @@
   </td>
 </tr>
 
-
-[cc-badge]: https://codeclimate.com/github/codeclimate/python-test-reporter/badges/gpa.svg
-[cc-coverage-badge]: https://codeclimate.com/github/codeclimate/python-test-reporter/badges/coverage.svg
-[cc-repo]: https://codeclimate.com/github/codeclimate/python-test-reporter
-[cc-coverage]: https://codeclimate.com/github/codeclimate/python-test-reporter/coverage
-[pypy-badge]: https://badge.fury.io/py/codeclimate-test-reporter.svg
-[pypy]: https://pypi.python.org/pypi/codeclimate-test-reporter
 </table>
 
 A web Application which Interactively Visualises unstructured information of various data sets.
