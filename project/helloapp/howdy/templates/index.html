@@ -53,6 +53,7 @@ body {
 .login-block input#username {
     background: #fff url('http://i.imgur.com/u0XmBmv.png') 20px top no-repeat;
     background-size: 16px 80px;
+    border-color: darkgray
 }
 
 .login-block input#username:focus {
@@ -63,6 +64,7 @@ body {
 .login-block input#password {
     background: #fff url('http://i.imgur.com/Qf83FTt.png') 20px top no-repeat;
     background-size: 16px 80px;
+    border-color: darkgray
 }
 
 .login-block input#password:focus {
@@ -94,6 +96,12 @@ body {
     background: #ff7b81;
 }
 
+#google
+{
+
+    height:40px;
+}
+
 #but2
 {
      margin-top: 0.5cm;
@@ -110,8 +118,11 @@ body {
     <input type="text" value="" placeholder="Username" id="username" />
     <input type="password" value="" placeholder="Password" id="password" />
     
-
-
+   <div align="left">
+    <a href="#"><img src="/static/aboutus/img/google.png" hspace="13" id="google"></a>
+    
+    <a href="#"><img src="/static/aboutus/img/Github.png" hspace="40"></a>
+   </div>
     <button id="but1">Submit</button>
 	
 	<a href="/aboutus/"><button id="but2">Try Demo</button></a>
