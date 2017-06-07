@@ -17,9 +17,6 @@
     <img src="https://badge.fury.io/py/codeclimate-test-reporter.svg" alt="pypy" />
   </td>
 </tr>
-
-
-
 </table>
 
 A web Application which Interactively Visualises unstructured information of various data sets.
