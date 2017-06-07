@@ -47,10 +47,20 @@ INSTALLED_APPS = [
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
+    'social.apps.django_app.default',
     'django.contrib.staticfiles',
 	'howdy'
 ]
 
+
+
+AUTHENTICATION_BACKENDS = (
+   
+   'social.backends.google.GoogleOAuth2',
+   'django.contrib.auth.backends.ModelBackend',
+   
+)
+LOGIN_REDIRECT_URL = '/' 
 MIDDLEWARE_CLASSES = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
@@ -107,6 +117,8 @@ else:
     }
 }
 
+SOCIAL_AUTH_GOOGLE_OAUTH2_KEY = '737432306620-33k73m2lin46mc9trpqg513eh3uo3h0c.apps.googleusercontent.com'
+SOCIAL_AUTH_GOOGLE_OAUTH2_SECRET = 'FlyJpQhcQqblTLXu5oo-LgMW'
 
 # Password validation
 # https://docs.djangoproject.com/en/1.9/ref/settings/#auth-password-validators

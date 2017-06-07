@@ -18,9 +18,12 @@ from django.conf.urls.static import static
 from django.contrib import admin
 from django.conf import settings
 from howdy import views
+
+admin.autodiscover()
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-	url(r'^',include('howdy.urls'))
+	url(r'^',include('howdy.urls')),
+    
 	
 ]
 if settings.DEBUG:

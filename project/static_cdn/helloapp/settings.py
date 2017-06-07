@@ -85,8 +85,22 @@ WSGI_APPLICATION = 'helloapp.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/1.9/ref/settings/#databases
+if os.getenv('BUILD_ON_TRAVIS', None):
+    SECRET_KEY = '%f9*xlr%&@70*t^r37d$tbaq&2c_8zaye^a-g^_js&=81%4#f%'
+    DEBUG = False
+    TEMPLATE_DEBUG = True
 
-DATABASES = {
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.mysql',
+            'NAME': 'travis_ci_db',
+            'USER': 'travis',
+            'PASSWORD': '',
+            'HOST': '127.0.0.1',
+        }
+    }
+else:
+   DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),

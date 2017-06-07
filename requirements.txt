@@ -1,0 +1,2 @@
+python-social-auth 0.2.21
+pip uninstall -y certifi && pip install certifi==2015.04.28
