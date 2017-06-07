@@ -23,9 +23,9 @@
 
 A web Application which Interactively Visualises unstructured information of various data sets using Bokeh.
 
-Features:
-
+# Features:
 1)SSO Google,Git
+<br>
 2)CSV To Highly interactive graphs
 
 ![Alt text](data.PNG?raw=true "E-Statics")
